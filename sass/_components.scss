@@ -1,0 +1,107 @@
+// navigation
+.navigation {
+
+  &__icon {
+    position: fixed;
+    z-index: 100;
+    top: 2rem;
+    right: 3rem;
+    width: 3rem;
+    height: 3rem;
+    background: transparent;
+    cursor: pointer;
+  }
+
+&__nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  position: fixed;
+  background-color: white;
+  top: 8rem;
+  left: 3rem;
+  right: 3rem;
+  bottom: 0;
+  border-radius: 3%;
+  transform: translateY(-150%);
+  transition: transform 0.2s;
+  height: 50vh;
+  }
+  
+  &__list {
+    list-style: none;
+  }
+
+  &__item {
+    padding: 1rem;
+    margin: auto;
+  }
+
+  &__link {
+    &:link,
+    &:visited {
+      display: inline-block;
+      font-size: 2rem;
+      font-weight: 300;
+      text-decoration: none;
+    
+    }
+  }
+
+  &__link--color-dark {
+    &:link,
+    &:visited {
+    color: red;
+    }
+  }
+
+  &__link--color-light {
+    &:link,
+    &:visited {
+    color: white;
+    }
+  }
+  
+}
+
+.showMenu {
+  transform: translateY(0);
+}
+
+.icon--close {
+  display: none;
+}
+
+.btn {
+  margin: 1rem auto;
+  width: 15rem;
+  height: 4rem;
+  border: none;
+  color: var( --color-white);
+  cursor: pointer;
+  border-radius: 100px;
+  background-image: linear-gradient(to right, var(--color-primary-green), var(--color-primary-cyan));
+}
+
+.footer-nav {
+  
+  &__list {
+    list-style: none;
+  }
+  &__item {
+
+  }
+ 
+  &__link {
+    &:link,
+    &:visited {
+      display: inline-block;
+      font-size: 2rem;
+      font-weight: 300;
+      text-decoration: none;
+      color: white;
+    
+    }
+  }
+}

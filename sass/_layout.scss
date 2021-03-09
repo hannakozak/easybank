@@ -1,0 +1,108 @@
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+
+    &__logo {
+    
+    }
+}
+
+.section-about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    text-align: center;
+    margin: 0 auto;
+    height: 100vh;
+    padding: 2rem;
+    padding-bottom: 8rem;
+    background:  url(../images/image-mockups.png), url(../images/bg-intro-mobile.svg), var(--color-grey-light-1);
+    background-repeat: no-repeat, no-repeat;
+    background-size: 100%;
+    background-position: center top -14rem, center top -4rem;
+}
+
+.overlay {
+    background-image: linear-gradient(
+          to  bottom,
+          hsla(233, 26%, 24%, 0.8),
+          hsla(233, 8%, 62%, 0.8),
+          hsla(0, 0%, 98%, 0.8)),
+  
+          url(../images/image-mockups.png), 
+          url(../images/bg-intro-mobile.svg)
+  }
+
+  .section-second {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      background-color: var(--color-grey-light-2);
+      margin-top: -4rem;
+      padding: 2rem;
+
+      &__icon {
+        padding: 2rem;
+      }
+  }
+
+  .section-third {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--color-grey-light-1);
+        padding: 2rem;
+        padding-bottom: 8rem;
+        
+
+        
+        &__article {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            background-color: var(--color-white);
+            padding: 2rem;
+            margin-top: -1.5rem;
+            
+        }
+        
+        &__image {
+            width: 100%;
+            border-radius: 10px;
+        }
+  }
+
+  .footer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-end;
+      background-color: var(--color-primary-blue);
+      color: var(--color-white);
+      text-align: center;
+      padding: 4rem;
+      
+
+      &__logo {
+        filter: invert(100%) sepia(98%) saturate(10%) hue-rotate(6deg) brightness(104%) contrast(101%);
+      }
+
+      &__icons {
+        width: 60%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 2rem;
+      }
+
+  }
+
+

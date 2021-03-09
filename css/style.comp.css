@@ -1,0 +1,41 @@
+:root {
+  --color-primary-blue: hsl(233, 26%, 24%);
+  --color-primary-green: hsl(136, 65%, 51%);
+  --color-primary-cyan: hsl(192, 70%, 51%);
+  --color-grey-light-3: hsl(233, 8%, 62%);
+  --color-grey-light-2: hsl(220, 16%, 96%);
+  --color-grey-light-1: hsl(0, 0%, 98%);
+  --color-white: hsl(0, 0%, 100%); }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+body {
+  font-family: 'Public Sans', sans-serif;
+  font-weight: 300;
+  line-height: 1.6;
+  font-size: 1.8rem;
+  background-color: red; }
+
+.header {
+  display: flex;
+  justify-content: space-between; }
+
+.navigation__list {
+  display: none; }
+
+.icon--close {
+  display: none; }
+
+.navigation__item {
+  display: none; }
