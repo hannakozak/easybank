@@ -1,6 +1,9 @@
 // navigation
 .navigation {
-
+  @media (min-width: 23em) {
+    
+  }
+  
   &__icon {
     position: fixed;
     z-index: 100;
@@ -10,6 +13,10 @@
     height: 3rem;
     background: transparent;
     cursor: pointer;
+
+    @media (min-width: 23em) {
+      display: none;
+    }
   }
 
 &__nav {
@@ -27,17 +34,37 @@
   transform: translateY(-150%);
   transition: transform 0.2s;
   height: 50vh;
+
+  
+  @media (min-width: 23em) {
+    position: static;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0;
+    transform: translateY(0%);
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 6rem;
+    width: 2rem;
+  }
   }
   
   &__list {
     list-style: none;
+    
+    @media (min-width: 23em) {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
   }
-
   &__item {
     padding: 1rem;
     margin: auto;
   }
-
   &__link {
     &:link,
     &:visited {
@@ -45,24 +72,11 @@
       font-size: 2rem;
       font-weight: 300;
       text-decoration: none;
-    
-    }
-  }
-
-  &__link--color-dark {
-    &:link,
-    &:visited {
-    color: red;
-    }
-  }
-
-  &__link--color-light {
-    &:link,
-    &:visited {
-    color: white;
+      color: var(--color-primary-blue);
     }
   }
   
+ 
 }
 
 .showMenu {
@@ -74,7 +88,6 @@
 }
 
 .btn {
-  margin: 1rem auto;
   width: 15rem;
   height: 4rem;
   border: none;
@@ -85,12 +98,19 @@
 }
 
 .footer-nav {
-  
+  @media (min-width: 23em) {
+    align-self: flex-start;
+    display: flex;
+    flex-direction: row;
+ }
   &__list {
     list-style: none;
-  }
-  &__item {
-
+    @media (min-width: 23em) {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     align-items: center;
+   }
   }
  
   &__link {
@@ -102,6 +122,43 @@
       text-decoration: none;
       color: white;
     
+      @media (min-width: 23em) {
+        height: 10%;
+        display: flex;
+        flex-flow: row wrap;
+     }
     }
   }
 }
+
+.section {
+  &__heading {
+    @media (min-width: 23em) {
+      padding-left: 10rem;
+      width: 50%;
+      text-align: left;
+      margin: 3rem 0;
+      }
+  }
+  &__content {
+    @media (min-width: 23em) {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: center;
+      align-items: stretch;
+      padding: 0rem 8rem;
+    }
+  }
+  &__block {
+    @media (min-width: 23em) {
+      display: flex;
+      padding: 1rem;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      width: 30%;
+      text-align: left;
+    }
+  }
+}
+
