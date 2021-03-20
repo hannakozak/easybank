@@ -11,16 +11,14 @@ navigation_icon.addEventListener("click", toggleMenu);
 
 
 function toggleMenu () {
+  nav.classList.toggle("showMenu");
+  section.classList.toggle("overlay");
   if (nav.classList.contains("showMenu")) {
-    nav.classList.remove("showMenu");
-    icon_close.style.display = "none";
-    icon_open.style.display = "block";
-    section.classList.remove("overlay");
-  } else {
-    nav.classList.add("showMenu");
     icon_close.style.display = "block";
     icon_open.style.display = "none";
-    section.classList.add("overlay");
+  } else {
+    icon_close.style.display = "none";
+    icon_open.style.display = "block";
   }
 }
 
